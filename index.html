@@ -22,11 +22,18 @@
                 <div class="navigation">
                     <div class="nav_left">
                         <a class="logo" href="index.html"><img src="img/logo.png" alt="logo"></a>
-                        <a class="search" href="#"><img src="img/search.png" alt="search"></a>
+                        <details>
+                            <summary>
+                                <img class="pic_header" src="img/search.png" alt="search">
+                            </summary>
+                            <form action="#" class="win_search">
+                                <input class="win_serch_item" required type="text" placeholder="search">
+                            </form>
+                        </details>
                     </div>
                     <div class="nav_right">
                         <details>
-                            <summary><img src="img/menu.png" alt="menu"></summary>
+                            <summary><img class="pic_header" src="img/menu.png" alt="menu"></summary>
                             <div class="box_menu">
                                 <h1 class="headding_menu">menu</h1>
                                 <hr>
@@ -56,20 +63,24 @@
                                 </div>
                             </div>
                         </details>
-                        <a href="registration.html"><img src="img/registration.png" alt="registration"></a>
-                        <a href="basket.html"><img src="img/basket.png" alt="basket"></a>
+                        <a class="pic_header" href="registration.html"><img src="img/registration.png"
+                                alt="registration"></a>
+                        <a class="pic_header" href="cart.html">
+                            <img src="img/basket.svg" alt="basket"></a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="article">
+        <div class="header_content">
             <div class="container">
-                <div class="content_article">
-                    <img class="figure" src="img/big_man.svg" alt="error">
+                <div class="content_header_content">
+                    <img class="figure" src="img/big-man.png" alt="error">
                     <div class="info">
-                        <div class="feature"></div>
-                        <p class="text_info">the brand</p>
-                        <p class="text_info_bottom">of luxurios <span class="text_color_feature">fashion</span></p>
+                        <h1 class="text_info">the brand
+                            <br>
+                            <span class="text_info_bottom">of luxurios</span>
+                            <span class="text_color_feature">fashion</span>
+                        </h1>
                     </div>
                 </div>
             </div>
@@ -79,19 +90,19 @@
         <div class="container">
             <div class="catalog">
                 <div class="catalog_top">
-                    <a class="box" href="#"><img src="img/for_women.jpg" alt="for_women">
+                    <a class="box" href="#"><img class="catalog_top_pic" src="img/for_women.jpg" alt="for_women">
                         <div class="box_content">
                             <p class="text_cat">30% off</p>
                             <p class="text_catalog_color">for women</p>
                         </div>
                     </a>
-                    <a class="box" href="#"><img src="img/for_men.jpg" alt="for_men">
+                    <a class="box" href="#"><img class="catalog_top_pic" src="img/for_men.jpg" alt="for_men">
                         <div class="box_content">
                             <p class="text_cat">hot deal</p>
                             <p class="text_catalog_color">for men</p>
                         </div>
                     </a>
-                    <a class="box" href="#"><img src="img/for_kids.jpg" alt="for_kids">
+                    <a class="box" href="#"><img class="catalog_top_pic" src="img/for_kids.jpg" alt="for_kids">
                         <div class="box_content">
                             <p class="text_cat">new arrivals</p>
                             <p class="text_catalog_color">for kids</p>
@@ -99,10 +110,12 @@
                     </a>
                 </div>
                 <div class="catalog_bottom">
-                    <a class="box" href="#"><img src="img/accesories.jpg" alt="for_kids">
+                    <a class="box_bottom" href="#"><img class="catalog_bottom_pic" src="img/accesories.jpg"
+                            alt="for_kids">
                         <div class="box_content_bottom">
-                            <p class="text_cat">new arrivals</p>
-                            <p class="text_catalog_color">for kids</p>
+                            <p class="text_cat">LUXIROUS & TRENDY
+                            </p>
+                            <p class="text_catalog_color">ACCESORIES</p>
                         </div>
                     </a>
                 </div>
