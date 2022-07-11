@@ -66,8 +66,22 @@
                         </details>
                         <a class="pic_header" href="registration.html"><img src="img/registration.png"
                                 alt="registration"></a>
-                        <a class="pic_header" href="cart.html">
-                            <img src="img/basket.svg" alt="basket"></a>
+                        <span class="cartIconWrap">
+                            <img class="pic_header" src="img/basket.svg" alt="error">
+                            <span>0</span>
+                        </span>
+                        <div class="basket hidden">
+                            <div class="basketHeader">
+                                <div>Наименование товара</div>
+                                <div>Количество</div>
+                                <div>Цена за шт</div>
+                                <div>Итого</div>
+                            </div>
+                            <div class="basketTotal">Итого товаров в корзине на сумму: $
+                                <span class="basketTotalValue">0</span>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -181,7 +195,7 @@
                 </div>
             </div>
             <div class="cards_catalog">
-                <div class="card">
+                <div class="card" data-id="1" data-name="ellery x m'o capsule" data-price="52">
                     <a class="card_pic" href="product.html"><img class="card_brightness" src="img/ELLERY(1).jpg"
                             alt="error">
                         <div class="text_card_box">
@@ -198,16 +212,15 @@
                         </a>
                     </div>
                 </div>
-
-                <div class="card">
+                <div class="card" data-id="2" data-name="ellery x" data-price="87">
                     <a class="card_pic" href="product.html"><img class="card_brightness" src="img/ELLERY(2).jpg"
                             alt="error">
                         <div class="text_card_box">
-                            <h4 class="headding_card">ellery x m'o capsule</h4>
+                            <h4 class="headding_card">ellery x</h4>
                             <p class="item_desk">Known for her sculptural takes on traditional tailoring, Australian
                                 arbiter of cool Kym Ellery teams up with Moda
                                 Operandi.</p>
-                            <p class="item_price">$52.00</p>
+                            <p class="item_price">$87.00</p>
                         </div>
                     </a>
                     <div class="link_box">
@@ -217,15 +230,15 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" data-id="3" data-name="o capsule" data-price="46">
                     <a class="card_pic" href="product.html"><img class="card_brightness" src="img/ELLERY(3).jpg"
                             alt="error">
                         <div class="text_card_box">
-                            <h4 class="headding_card">ellery x m'o capsule</h4>
+                            <h4 class="headding_card">o capsule</h4>
                             <p class="item_desk">Known for her sculptural takes on traditional tailoring, Australian
                                 arbiter of cool Kym Ellery teams up with Moda
                                 Operandi.</p>
-                            <p class="item_price">$52.00</p>
+                            <p class="item_price">$46.00</p>
                         </div>
                     </a>
                     <div class="link_box">
@@ -235,15 +248,15 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" data-id="4" data-name="ery x m'o" data-price="456">
                     <a class="card_pic" href="product.html"><img class="card_brightness" src="img/ELLERY(4).png "
                             alt="error">
                         <div class="text_card_box">
-                            <h4 class="headding_card">ellery x m'o capsule</h4>
+                            <h4 class="headding_card">ery x m'o</h4>
                             <p class="item_desk">KKnown for her sculptural takes on traditional tailoring,
                                 Australian arbiter of cool Kym Ellery teams up with Moda
                                 Operandi.</p>
-                            <p class="item_price">$52.00</p>
+                            <p class="item_price">$456.00</p>
                         </div>
                     </a>
                     <div class="link_box">
@@ -253,15 +266,15 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" data-id="5" data-name="eule" data-price="578">
                     <a class="card_pic" href="product.html"><img class="card_brightness" src="img/ELLERY(5).jpg"
                             alt="error">
                         <div class="text_card_box">
-                            <h4 class="headding_card">ellery x m'o capsule</h4>
+                            <h4 class="headding_card">eule</h4>
                             <p class="item_desk">Known for her sculptural takes on traditional tailoring, Australian
                                 arbiter of cool Kym Ellery teams up with Moda
                                 Operandi Lorem, ipsum dolor.</p>
-                            <p class="item_price">$52.00</p>
+                            <p class="item_price">$578.00</p>
                         </div>
                     </a>
                     <div class="link_box">
@@ -271,15 +284,15 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" data-id="6" data-name="ele" data-price="77">
                     <a class="card_pic" href="product.html"><img class="card_brightness" src="img/ELLERY(6).jpg"
                             alt="error">
                         <div class="text_card_box">
-                            <h4 class="headding_card">ellery x m'o capsule</h4>
+                            <h4 class="headding_card">ele</h4>
                             <p class="item_desk">Known for her sculptural takes on traditional tailoring, Australian
                                 arbiter of cool Kym Ellery teams up with Moda
                                 Operandi Lorem ipsum dolor sit amet consectetur.</p>
-                            <p class="item_price">$52.00</p>
+                            <p class="item_price">$77.00</p>
                         </div>
                     </a>
                     <div class="link_box">
@@ -289,15 +302,15 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" data-id="7" data-name="elefg" data-price="63">
                     <a class="card_pic" href="product.html"><img class="card_brightness" src="img/ELLERY(7).jpg"
                             alt="error">
                         <div class="text_card_box">
-                            <h4 class="headding_card">ellery x m'o capsule</h4>
+                            <h4 class="headding_card">elefg</h4>
                             <p class="item_desk">Known for her sculptural takes on traditional tailoring, Australian
                                 arbiter of cool Kym Ellery teams up with Moda
                                 Operandi Lorem ipsum dolor sit amet consectetur.</p>
-                            <p class="item_price">$52.00</p>
+                            <p class="item_price">$63.00</p>
                         </div>
                     </a>
                     <div class="link_box">
@@ -307,15 +320,15 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" data-id="8" data-name="retklg" data-price="39">
                     <a class="card_pic" href="product.html"><img class="card_brightness" src="img/ELLERY(8).jpg"
                             alt="error">
                         <div class="text_card_box">
-                            <h4 class="headding_card">ellery x m'o capsule</h4>
+                            <h4 class="headding_card">retklg</h4>
                             <p class="item_desk">Known for her sculptural takes on traditional tailoring, Australian
                                 arbiter of cool Kym Ellery teams up with Moda
                                 Operandi Lorem ipsum dolor sit amet consectetur.</p>
-                            <p class="item_price">$52.00</p>
+                            <p class="item_price">$39.00</p>
                         </div>
                     </a>
                     <div class="link_box">
@@ -325,15 +338,15 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" data-id="9" data-name="ropdp" data-price="13">
                     <a class="card_pic" href="product.html"><img class="card_brightness" src="img/ELLERY(9).jpg"
                             alt="error">
                         <div class="text_card_box">
-                            <h4 class="headding_card">ellery x m'o capsule</h4>
+                            <h4 class="headding_card">ropdp</h4>
                             <p class="item_desk">Known for her sculptural takes on traditional tailoring, Australian
                                 arbiter of cool Kym Ellery teams up with Moda
                                 Operandi Lorem ipsum dolor sit amet consectetur.</p>
-                            <p class="item_price">$52.00</p>
+                            <p class="item_price">$13.00</p>
                         </div>
                     </a>
                     <div class="link_box">
@@ -445,6 +458,7 @@
         </div>
     </div>
 
+    <script src="app.js"></script>
 </body>
 
 </html>

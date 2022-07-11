@@ -36,14 +36,29 @@
 
 @-webkit-keyframes kenburns-top {
   0% {
-    -webkit-transform: scale(1) translateY(0);
-    transform: scale(1) translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
     -webkit-transform-origin: 50% 16%;
     transform-origin: 50% 16%;
   }
   100% {
-    -webkit-transform: scale(1.25) translateY(-15px);
-    transform: scale(1.25) translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+  }
+}
+
+@keyframes kenburns-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transform-origin: 50% 16%;
+    transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
     -webkit-transform-origin: top;
     transform-origin: top;
   }
@@ -57,23 +72,8 @@
     transform-origin: 50% 16%;
   }
   100% {
-    -webkit-transform: scale(1.25) translateY(-15px);
-    transform: scale(1.25) translateY(-15px);
-    -webkit-transform-origin: top;
-    transform-origin: top;
-  }
-}
-
-@keyframes kenburns-top {
-  0% {
-    -webkit-transform: scale(1) translateY(0);
-    transform: scale(1) translateY(0);
-    -webkit-transform-origin: 50% 16%;
-    transform-origin: 50% 16%;
-  }
-  100% {
-    -webkit-transform: scale(1.25) translateY(-15px);
-    transform: scale(1.25) translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
     -webkit-transform-origin: top;
     transform-origin: top;
   }
@@ -953,8 +953,8 @@ details[open]>summary::after {
 }
 
 .filter_right_item_content {
-  z-index: 20;
-  width: 170px;
+  z-index: 9;
+  width: 33%;
   padding: 13px 16px 16px 16px;
   cursor: pointer;
   position: absolute;
@@ -1280,9 +1280,91 @@ details[open]>summary::after {
           filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(208deg) brightness(165%) contrast(131%);
 }
 
+.hidden {
+  display: none;
+}
+
+.basket {
+  position: absolute;
+  z-index: 20;
+  right: 5%;
+  top: 71px;
+  background: white;
+  padding: 10px;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  font-size: 14px;
+  display: block;
+  width: 500px;
+}
+
+.basketHeader {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 552px) {
+  .basket {
+    width: 500px;
+  }
+}
+
+@media (min-width: 340px) {
+  .basket {
+    font-size: 16px;
+  }
+}
+
 .basket_product {
   width: 26px;
   height: 24px;
+}
+
+.cartIconWrap {
+  position: relative;
+  cursor: pointer;
+}
+
+.cartIconWrap span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  color: white;
+  background: #f16d7f;
+  border-radius: 50%;
+  position: absolute;
+  text-align: center;
+  right: -8px;
+  top: -15px;
+  font-size: 12px;
+  line-height: 19px;
+}
+
+.basketTotalValue span {
+  font-weight: bold;
+  text-align: right;
+}
+
+.basketHeader {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 10px;
+  font-weight: bold;
 }
 
 .txt_card_product {
@@ -1292,6 +1374,17 @@ details[open]>summary::after {
   color: #F16D7F;
   margin-left: 10px;
   padding-top: 10px;
+}
+
+.basketRow {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 10px;
 }
 
 .main_reg {
@@ -1673,6 +1766,9 @@ details[open]>summary::after {
         -ms-flex-pack: end;
             justify-content: end;
   }
+  .basket {
+    width: 500px;
+  }
   .pic_header {
     display: none;
   }
@@ -1738,12 +1834,15 @@ details[open]>summary::after {
   .total {
     width: 100%;
   }
-  .card_brightness {
-    height: 144px;
-  }
   .pic_content_product {
     width: 100%;
     min-height: 374px;
+  }
+}
+
+@media (min-width: 340px) {
+  .basket {
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */
